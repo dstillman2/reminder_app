@@ -1,0 +1,20 @@
+@import 'global';
+
+/* pages */
+@import 'login';
+
+/* components */
+@import 'sidebar';
+@import 'main';
+@import 'content';
+@import 'settings';
+
+/* widgets */
+@import 'table-collapsed';
+@import 'buttons';
+@import 'pagination';
+@import 'dragdrop';
+
+/* view settings */
+@import 'table-default';
+@import 'bootstrap-override';

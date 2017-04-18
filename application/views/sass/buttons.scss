@@ -1,0 +1,135 @@
+@import 'common/constants';
+
+
+@mixin transitions($time) {
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  transition: $time;
+}
+
+.btn {
+  @include transitions(0.3s);
+  box-shadow: 0 0 0 #FFF;
+  border: 0;
+
+  &:hover {
+    @include transitions(0.2s);
+  }
+
+  &-primary {
+    background-color: #2996cc;
+
+    &:hover {
+      box-shadow: 0 2px 3px #CCC;
+      background-color: #35AEDC;
+    }
+
+    &:active, &:focus {
+      background-color: #1C7DAD;
+    }
+
+    @media screen and (max-width: 500px) {
+      display: block;
+      width: 100%;
+      margin-right: 0 !important;
+    }
+  }
+
+  &-info {
+    background: #2996cc;
+
+    &:hover, &:focus, &:active {
+      box-shadow: 0 2px 3px #CCC;
+      background-color: #35AEDC !important;
+    }
+
+    @media screen and (max-width: 500px) {
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  &-default {
+    background-color: #E1E1E1;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: #F1F1F1;
+      box-shadow: 0 2px 3px #DDD;
+    }
+
+    @media screen and (max-width: 500px) {
+      display: block;
+      width: 100%;
+      margin-right: 0px;
+      margin-top: 5px;
+    }
+  }
+
+  &-danger {
+    background-color: $red;
+
+    &:hover, &:active, &:focus {
+      background-color: #e85454;
+      box-shadow: 0 2px 3px #CCC;
+    }
+  }
+}
+
+.btn-styling {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-radius: 2px !important;
+  padding: 10px 28px;
+
+  @media screen and (max-width: 500px) {
+    padding: 13px 0;
+  }
+
+  &.login, &.full-width {
+    width: 100%;
+    padding: 13px 30px;
+  }
+
+  &.sm {
+    font-size: 0.8em;
+    padding: 6px 11px;
+  }
+
+  &.add-icon {
+    font-size: 2em;
+  }
+
+  &.disabled {
+    background-color: #F9F9F9;
+    color: #111;
+    opacity: 1;
+    cursor: default;
+    text-decoration: underline;
+  }
+
+  &.pills {
+    border-radius: 0;
+    margin-right: 10px;
+
+    @media screen and (max-width: 500px) {
+      display: block;
+      width: 100%;
+    }
+
+    &.disabled {
+      &:hover, &:focus {
+        box-shadow: 0 0 0 #FFF;
+        background-color: #F9F9F9;
+      }
+    }
+  }
+}
+
+.button-nostyle {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: 0;
+}

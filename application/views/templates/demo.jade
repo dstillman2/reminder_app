@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+
+    meta(http-equiv='X-UA-Compatible' content='IE-edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
+
+    title='Demo Reminders'
+
+    link(rel='stylesheet', href='/static/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/static/css/style.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-datetimepicker.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Maven+Pro')
+
+    style.
+      html, body {
+        background: #FFF;
+      }
+
+  body
+    block content
+      #app
+
+    script.
+      var servers = {
+        web: '#{webServer}',
+        accounts: '#{accountServer}',
+        reminders: '#{reminderServer}' };
+
+      var flagDemo = !{isDemo};
+
+    script(type='text/javascript' src='/static/js/vendor/jquery-1.11.3.min.js')
+    script(type='text/javascript' src='/static/js/vendor/bootstrap.min.js')
+    script(type='text/javascript' src='/static/js/vendor/moment.min.js')
+    script(type='text/javascript' src='/static/js/vendor/moment-timezone-with-data.min.js')
+
+    script(type='text/javascript' src='#{bundleUri}')

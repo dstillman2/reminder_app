@@ -1,0 +1,41 @@
+ul.pagination {
+  margin: 0;
+  border-radius: 0;
+
+  li a {
+    color: #555;
+    border: 0;
+    margin: 0 2px;
+    border: 1px solid #CCC;
+    border-radius: 0px;
+
+    &:hover {
+      background-color: #F1F1F1;
+      color: #555;
+      cursor: pointer;
+    }
+
+    &:focus {
+      color: #000;
+      background-color: #FFF;
+    }
+  }
+
+  .selected a {
+    background-color: #2d3133;
+    color: #F1F1F1;
+    opacity: 0.8;
+    border: 1px solid #2d3133;
+    cursor: default;
+
+    &:hover {
+      background-color: #2d3133;
+      color: #F1F1F1;
+    }
+
+    &:focus {
+      background-color: #2d3133;
+      color: #F1F1F1;
+    }
+  }
+}

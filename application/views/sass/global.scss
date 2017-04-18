@@ -1,0 +1,96 @@
+html, body {
+  background-color: #EAEAEA;
+  color: #555;
+  font-size: 0.93em;
+  line-height: 25px;
+  font-family: 'Maven Pro', sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #2996cc;
+  &:hover {
+    color: #35AEDC;
+  }
+  &:focus, &:active {
+    color: #1C7DAD;
+  }
+  &:active, &:hover, &:visited, &:link {
+    text-decoration: none;
+  }
+}
+
+hr {
+  border-top: 1px solid #ddd;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.h5-heading {
+  margin: 10px 0;
+  padding: 15px 20px;
+  background-color: #F1F1F1;
+}
+
+.badge {
+  float: right;
+  font-size: 11px;
+  border-radius: 2px;
+  margin-right: 20px;
+  margin-top: 3px;
+  background-color: #425158;
+}
+
+.reminder-type {
+  position: relative;
+  background-color: #F1F1F1;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+
+  &:hover {
+    transition: 0.2s ease-in;
+    box-shadow: 0 2px 3px #CCC;
+  }
+
+  &.selected {
+    background-color: #2d3133;
+    color: #DEDEDE;
+    cursor: default;
+  }
+
+  > .glyphicon {
+    display: block;
+    font-size: 24px;
+  }
+}
+
+h4 {
+  color: #555;
+  font-size: 1.8em;
+  margin: 10px 0 25px 0;
+}
+
+h5 {
+  color: #555;
+  font-size: 1.2em;
+  line-height: 18px;
+  margin: 0 0 5px 0;
+}
+
+textarea {
+  resize: none;
+  border-radius: 3px!important;
+  padding: 10px 12px!important;
+}

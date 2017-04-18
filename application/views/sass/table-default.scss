@@ -1,0 +1,22 @@
+.table {
+  tr {
+    height: 36px;
+  }
+}
+
+.table>thead>tr>th, .table>thead>tr {
+  border: 1px solid #ccc;
+  background-color: #F1F1F1;
+}
+
+.table>thead>tr {
+  font-weight: bold;
+}
+
+.table>thead>tr>th, .table>tbody>tr>td {
+  vertical-align: middle;
+}
+
+.table>tbody>tr>td {
+  border: 1px solid #ccc;
+}
